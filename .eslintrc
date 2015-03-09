@@ -1,27 +1,13 @@
 {
   "env": {
     "browser": true,
+    "es6": true,
     "node": true
   },
 
   "parser": "babel-eslint",
 
   "ecmaFeatures": {
-    "arrowFunctions": true,
-    "binaryLiterals": true,
-    "blockBindings": true,
-    "defaultParams": true,
-    "forOf": true,
-    "generators": true,
-    "objectLiteralComputedProperties": true,
-    "objectLiteralShorthandMethods": true,
-    "objectLiteralShorthandProperties": true,
-    "octalLiterals": true,
-    "regexUFlag": true,
-    "regexYFlag": true,
-    "superInFunctions": true,
-    "templateStrings": true,
-    "unicodeCodePointEscapes": true,
     "jsx": true
   },
 
