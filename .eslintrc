@@ -6,6 +6,9 @@
   },
 
   "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
 
   "ecmaFeatures": {
     "modules": true,
@@ -34,6 +37,14 @@
     "yoda": [2, "never"],
 
     "no-var": 2,
-    "generator-star": [2, "start"]
+    "generator-star": [2, "start"],
+
+    "react/jsx-quotes": [2, "double", "avoid-escape"],
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 2,
+    "react/self-closing-comp": 2,
+    "react/wrap-multilines": 2
   }
 }
