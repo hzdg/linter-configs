@@ -39,7 +39,7 @@
     "yoda": [2, "never"],
 
     "no-var": 2,
-    "generator-star": [2, "start"],
+    "generator-star-spacing": [2, "before"],
 
     "react/jsx-boolean-value": [2, "never"],
     "react/jsx-quotes": [2, "double", "avoid-escape"],
