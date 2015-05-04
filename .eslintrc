@@ -16,7 +16,7 @@
   },
 
   "rules": {
-    "strict": 0,
+    "strict": [2, "global"],
 
     "comma-dangle": [2, "always-multiline"],
     "no-floating-decimal": 2,
