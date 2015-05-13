@@ -42,6 +42,12 @@
     "no-var": 2,
     "generator-star-spacing": [2, "before"],
 
+    "valid-jsdoc": [2, {
+      "prefer": {
+        "return": "returns"
+      }
+    }],
+
     "react/jsx-boolean-value": [2, "never"],
     "react/jsx-quotes": [2, "double", "avoid-escape"],
     "react/jsx-uses-vars": 1,
