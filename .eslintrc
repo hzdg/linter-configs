@@ -202,6 +202,6 @@
     "valid-typeof": 2,
     "vars-on-top": 0,
     "wrap-iife": 0,
-    "wrap-regex": 0,
+    "wrap-regex": 0
   }
 }
