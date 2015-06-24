@@ -29,6 +29,7 @@
     "consistent-return": 0,
     "curly": [2, "multi-line"],
     "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
+    "no-underscore-dangle": 1,
     "object-curly-spacing": [2, "never"],
     "quote-props": [2, "as-needed"],
     "quotes": [2, "single", "avoid-escape"],
