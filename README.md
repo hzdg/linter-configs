@@ -13,6 +13,9 @@ We use linters that aren't tied to any specific IDE (so everybody can use the
 same ones), but there are lots of great plugins for interfacing with them, like
 [AtomLinter] and [SublimeLinter].
 
+Check out the directories in this repository for more info about specific
+linters.
+
 
 [AtomLinter]: https://github.com/AtomLinter/Linter
 [SublimeLinter]: https://github.com/SublimeLinter
