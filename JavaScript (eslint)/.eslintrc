@@ -163,7 +163,7 @@
     "no-warning-comments": [0, {"terms": ["todo", "fixme", "xxx"], "location": "start"}],
     "no-with": 2,
 
-    "arrow-parens": 2,
+    "arrow-parens": 0,
     "arrow-spacing": [2, {"before": true, "after": true}],
     "accessor-pairs": 0,
     "block-scoped-var": 0,
