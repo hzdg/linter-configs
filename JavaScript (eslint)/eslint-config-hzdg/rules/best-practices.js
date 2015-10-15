@@ -34,6 +34,7 @@ module.exports = {
     'no-new-func': 2,
     'no-new-wrappers': 2,
     'no-new': 2,
+    'no-octal': 2,
     'no-octal-escape': 2,
     'no-param-reassign': 0,
     'no-process-env': 0,
@@ -52,7 +53,7 @@ module.exports = {
     'no-with': 2,
     radix: 0,
     'vars-on-top': 0,
-    'wrap-life': 0,
+    'wrap-iife': 0,
     yoda: [2, 'never'],
   },
 };

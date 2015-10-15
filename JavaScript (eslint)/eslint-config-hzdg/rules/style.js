@@ -49,6 +49,7 @@ module.exports = {
     'semi-spacing': [2, {before: false, after: true}],
     'sort-vars': 0,
     'space-after-keywords': [2, 'always'],
+    'space-before-keywords': [2, 'always'],
     'space-before-blocks': [2, 'always'],
     'space-before-function-paren': [2, 'never'],
     'space-in-parens': [2, 'never'],
