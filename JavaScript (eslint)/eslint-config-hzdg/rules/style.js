@@ -37,7 +37,7 @@ module.exports = {
     'no-trailing-spaces': 2,
     'no-underscore-dangle': 1,
     'no-unneeded-ternary': 0,
-    'object-curly-spacing': [2, 'never'],
+    'object-curly-spacing': 0,
     'one-var': 0,
     'operator-assignment': [0, 'always'],
     'operator-linebreak': 0,

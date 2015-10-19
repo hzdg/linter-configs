@@ -32,5 +32,5 @@ module.exports = {
       },
     }],
     'valid-typeof': 2,
-  }
+  },
 };

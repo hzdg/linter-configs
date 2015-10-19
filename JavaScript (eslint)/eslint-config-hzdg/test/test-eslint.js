@@ -15,20 +15,20 @@ for (const rule in hzRules) {
   if (!eslintRules.hasOwnProperty(rule)) deprecatedRules.push(rule);
 }
 
-const newRules = [];
+const missingRules = [];
 for (const rule in eslintRules) {
-  if (!hzRules.hasOwnProperty(rule)) newRules.push(rule);
+  if (!hzRules.hasOwnProperty(rule)) missingRules.push(rule);
 }
 
-describe('HZ Linter Rules', () => {
+describe('HZ ESLint Rules (ESLint)', () => {
 
-  it('should not have deprecated rules', (done) => {
+  it('should not have extraneous or deprecated rules', done => {
     expect(deprecatedRules.length, deprecatedRules).to.equal(0);
     done();
   });
 
-  it('should not be missing new rules', (done) => {
-    expect(newRules.length, newRules).to.equal(0);
+  it('should not be missing rules', done => {
+    expect(missingRules.length, missingRules).to.equal(0);
     done();
   });
 
