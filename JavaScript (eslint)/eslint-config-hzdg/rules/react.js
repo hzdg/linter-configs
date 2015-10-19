@@ -25,6 +25,7 @@ module.exports = {
     'react/no-multi-comp': 0,
     'react/no-set-state': 0,
     'react/no-unknown-property': 1,
+    'react/prefer-es6-class': 0,
     'react/react-in-jsx-scope': 2,
     'react/require-extension': [1, {extensions: ['.js', '.jsx']}],
     'react/prop-types': 2,
