@@ -4,7 +4,7 @@
   "description": "HZ's ESLint config",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register test.js"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
