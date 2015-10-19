@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import {expect} from 'chai';
+import assert from 'power-assert';
 import {rules as eslintRules} from 'eslint/conf/eslint';
 
 let hzRules = {};
@@ -23,12 +23,12 @@ for (const rule in eslintRules) {
 describe('HZ ESLint Rules (ESLint)', () => {
 
   it('should not have extraneous or deprecated rules', done => {
-    expect(deprecatedRules.length, deprecatedRules).to.equal(0);
+    assert(deprecatedRules.length === 0, `Deprecated Rule(s): ${deprecatedRules}`);
     done();
   });
 
   it('should not be missing rules', done => {
-    expect(missingRules.length, missingRules).to.equal(0);
+    assert(missingRules.length === 0, `Missing Rule(s): ${missingRules}`);
     done();
   });
 
