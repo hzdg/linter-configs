@@ -1,35 +1,30 @@
-import babel from './rules/babel';
-import bestPractices from './rules/best-practices';
-import ecmaFeatures from './rules/ecma-features';
-import legacy from './rules/legacy';
-import node from './rules/node';
-import possibleErrors from './rules/possible-errors';
-import react from './rules/react';
-import strict from './rules/strict';
-import style from './rules/style';
-import variables from './rules/variables';
+/* eslint-disable  global-require */
+import fs from 'fs';
+import path from 'path';
 import {rules as defaultRules} from 'eslint/conf/eslint';
 
-let hzRules = Object.assign(
-  // babel.rules,
-  bestPractices.rules,
-  ecmaFeatures.rules,
-  legacy.rules,
-  node.rules,
-  possibleErrors.rules,
-  // react.rules,
-  strict.rules,
-  style.rules,
-  variables.rules
-);
 
-hzRules = Array.sort(Object.keys(hzRules));
+const files = {};
+
+fs.readdirSync(path.join(__dirname, 'rules')).forEach(name => {
+  if (name === 'react.js' || name === 'babel.js') {
+    return;
+  }
+
+  files[name] = require(`./rules/${name}`);
+});
+
+
+let hzRules = [];
+Object.keys(files).forEach(name => {
+  hzRules.push(...Object.keys(files[name].rules));
+});
+
+hzRules = Array.sort(hzRules);
 const eslintRules = Array.sort(Object.keys(defaultRules));
 
-// console.log(hzRules)
-// console.log(eslintRules);
-console.log(hzRules.length, 'hz rules');
-console.log(eslintRules.length, 'eslint rules');
+console.log(`${hzRules.length} hz rules`);
+console.log(`${eslintRules.length} eslint rules`);
 
 let deprecatedRules = [], newRules = [];
 
@@ -47,5 +42,5 @@ eslintRules.forEach(eslintRule => {
   }
 });
 
-console.log(deprecatedRules, 'rules deprecated');
-console.log(newRules, 'new rules');
+console.log(`${deprecatedRules} rules deprecated`);
+console.log(`${newRules} new rules`);

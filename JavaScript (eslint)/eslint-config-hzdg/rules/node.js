@@ -12,5 +12,6 @@ module.exports = {
     'no-process-exit': 2,
     'no-restricted-modules': 0,
     'no-sync': 0,
+    'foofoo-bad': 2,
   },
 };
