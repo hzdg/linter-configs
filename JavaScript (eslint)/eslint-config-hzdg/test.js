@@ -1,6 +1,7 @@
 /* eslint-disable  global-require */
 import fs from 'fs';
 import path from 'path';
+import chai, {expect} from 'chai';
 import {rules as defaultRules} from 'eslint/conf/eslint';
 
 
@@ -23,11 +24,8 @@ Object.keys(files).forEach(name => {
 hzRules = Array.sort(hzRules);
 const eslintRules = Array.sort(Object.keys(defaultRules));
 
-console.log(`${hzRules.length} hz rules`);
-console.log(`${eslintRules.length} eslint rules`);
 
 let deprecatedRules = [], newRules = [];
-
 hzRules.forEach(hzRule => {
   const index = eslintRules.indexOf(hzRule);
   if (index === -1) {
@@ -42,5 +40,16 @@ eslintRules.forEach(eslintRule => {
   }
 });
 
-console.log(`${deprecatedRules} rules deprecated`);
-console.log(`${newRules} new rules`);
+describe('HZ Linter Rules', () => {
+
+  it('should have no deprecated rules', (done) => {
+    expect(deprecatedRules.length, deprecatedRules).to.equal(0);
+    done();
+  });
+
+  it('should have no new rules', (done) => {
+    expect(newRules.length, newRules).to.equal(0);
+    done();
+  });
+
+});
