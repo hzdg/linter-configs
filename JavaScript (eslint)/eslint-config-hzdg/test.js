@@ -31,8 +31,21 @@ const eslintRules = Array.sort(Object.keys(defaultRules));
 console.log(hzRules.length, 'hz rules');
 console.log(eslintRules.length, 'eslint rules');
 
+let deprecatedRules = [], newRules = [];
+
 hzRules.forEach(hzRule => {
   const index = eslintRules.indexOf(hzRule);
-  if (index !== -1) eslintRules.splice(index, 1);
+  if (index === -1) {
+    deprecatedRules.push(hzRule);
+  }
 });
-console.log(eslintRules, ' not defined.');
+
+eslintRules.forEach(eslintRule => {
+  const index = hzRules.indexOf(eslintRule);
+  if (index === -1) {
+    newRules.push(eslintRule);
+  }
+});
+
+console.log(deprecatedRules, 'rules deprecated');
+console.log(newRules, 'new rules');
