@@ -1,4 +1,4 @@
-TEST_CMD := ./node_modules/.bin/mocha --compilers js:babel/register
+TEST_CMD := ./node_modules/.bin/mocha --compilers js:babel-core/register
 TEST_PATTERN := test/test-**.js
 
 test:
