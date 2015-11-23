@@ -21,10 +21,12 @@ module.exports = {
     jsx: true,
   },
   rules: {
+    'arrow-body-style': [2, 'as-needed'],
     'arrow-parens': 0,
     'arrow-spacing': [2, {before: true, after: true}],
     'constructor-super': 0,
     'generator-star-spacing': 0,
+    'no-arrow-condition': 2,
     'no-class-assign': 2,
     'no-const-assign': 2,
     'no-dupe-class-members': 2,

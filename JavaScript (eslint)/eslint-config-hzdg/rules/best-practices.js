@@ -12,6 +12,7 @@ module.exports = {
     'guard-for-in': 0,
     'no-alert': 2,
     'no-caller': 2,
+    'no-case-declarations': 2,
     'no-div-regex': 0,
     'no-else-return': 0,
     'no-empty-label': 2,
