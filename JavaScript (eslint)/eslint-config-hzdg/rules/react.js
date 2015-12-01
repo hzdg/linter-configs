@@ -10,6 +10,7 @@ module.exports = {
     'react/jsx-curly-spacing': [2, 'never'],
     'react/jsx-indent-props': 0,
     'react/jsx-key': 1,
+    'react/jsx-handler-names': 1,
     'react/jsx-max-props-per-line': 0,
     'react/jsx-no-bind': 2,
     'react/jsx-no-duplicate-props': [2, {ignoreCase: true}],
