@@ -11,7 +11,7 @@ module.exports = {
     'eol-last': 2,
     'func-names': 0,
     'func-style': [0, 'declaration'],
-    'id-length': [2, {min: 2, properties: 'never'}],
+    'id-length': 0,
     'id-match': 0,
     indent: [2, 2, {SwitchCase: 1}],
     'jsx-quotes': [2, 'prefer-double'],
