@@ -11,6 +11,9 @@ module.exports = {
     'eslint-config-hzdg/rules/style',
     'eslint-config-hzdg/rules/variables',
   ],
+  env: {
+    browser: true,
+  },
   parser: 'babel-eslint',
   rules: {},
 };
