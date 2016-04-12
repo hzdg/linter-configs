@@ -3,7 +3,7 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/display-name': [1, {acceptTranspilerName: true}],
+    'react/display-name': [1, {ignoreTranspilerName: false}],
     'react/forbid-prop-types': 0,
     'react/jsx-boolean-value': [2, 'never'],
     'react/jsx-closing-bracket-location': [0, 'props-aligned'],
