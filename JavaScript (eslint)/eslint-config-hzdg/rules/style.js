@@ -24,7 +24,7 @@ module.exports = {
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'new-parens': 2,
     'newline-after-var': 0,
-    'newline-before-return': 2,
+    'newline-before-return': 0, /* TODO: Review */
     'newline-per-chained-call': 0, /* TODO: Review */
     'no-array-constructor': 2,
     'no-continue': 0,
