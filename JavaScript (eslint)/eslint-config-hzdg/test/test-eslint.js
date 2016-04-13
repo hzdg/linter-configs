@@ -5,7 +5,7 @@ import {rules as eslintRules} from 'eslint/conf/eslint';
 
 let hzRules = {};
 fs.readdirSync(path.join(__dirname, '..', 'rules')).forEach(name => {
-  if (name === 'react.js' || name === 'babel.js') return;
+  if (name === 'react.js' || name === 'babel.js' || name === 'jsx-a11y.js') return;
   const {rules} = require(`../rules/${name}`);
   hzRules = Object.assign(hzRules, rules);
 });
