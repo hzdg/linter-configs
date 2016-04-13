@@ -4,11 +4,18 @@ import assert from 'power-assert';
 import {rules as eslintRules} from 'eslint/conf/eslint';
 
 let hzRules = {};
-fs.readdirSync(path.join(__dirname, '..', 'rules')).forEach(name => {
-  if (name === 'react.js' || name === 'babel.js' || name === 'jsx-a11y.js') return;
-  const {rules} = require(`../rules/${name}`);
-  hzRules = Object.assign(hzRules, rules);
-});
+const plugins = [
+  'babel.js',
+  'react.js',
+  'jsx-a11y.js',
+];
+
+fs.readdirSync(path.join(__dirname, '..', 'rules'))
+  .filter(name => plugins.indexOf(name) < 0)
+  .forEach(name => {
+    const {rules} = require(`../rules/${name}`);
+    hzRules = Object.assign(hzRules, rules);
+  });
 
 const deprecatedRules = [];
 for (const rule in hzRules) {
