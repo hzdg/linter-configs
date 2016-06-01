@@ -1,6 +1,6 @@
 {
-  "extends": "hzdg",
+  "extends": "eslint-config-hzdg",
   "rules": {
-    "no-magic-numbers": 0,
+
   }
 }
