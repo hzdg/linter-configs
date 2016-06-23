@@ -11,6 +11,7 @@ module.exports = {
     'dot-notation': [2, {allowKeywords: true}],
     eqeqeq: 2,
     'guard-for-in': 0,
+    'max-lines': 2,
     'max-statements-per-line': 0,
     'no-alert': 2,
     'no-caller': 2,

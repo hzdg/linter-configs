@@ -30,6 +30,7 @@ module.exports = {
     'no-continue': 0,
     'no-inline-comments': 0,
     'no-lonely-if': 0,
+    'no-mixed-operators': 2,
     'no-mixed-spaces-and-tabs': [2, false],
     'no-multiple-empty-lines': [0, {max: 2}],
     'no-nested-ternary': 0,
@@ -42,6 +43,7 @@ module.exports = {
     'no-underscore-dangle': 1,
     'no-unneeded-ternary': 0,
     'no-whitespace-before-property': 2,
+    'object-curly-newline': 0,
     'object-curly-spacing': 0,
     'one-var': 0,
     'one-var-declaration-per-line': [0, 'always'], /* TODO: Review */
