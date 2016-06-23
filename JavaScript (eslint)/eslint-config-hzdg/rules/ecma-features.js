@@ -26,7 +26,7 @@ module.exports = {
     'no-this-before-super': 0,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
-    'no-useless-rename': 2,
+    'no-useless-rename': 0,
     'no-var': 2,
     'object-property-newline': [2, {allowMultiplePropertiesPerLine: true}],
     'object-shorthand': 2,
