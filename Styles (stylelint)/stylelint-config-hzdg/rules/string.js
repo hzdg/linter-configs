@@ -1,3 +1,5 @@
 module.exports = {
-  rules: {},
+  rules: {
+    'string-no-newline': true,
+  },
 };

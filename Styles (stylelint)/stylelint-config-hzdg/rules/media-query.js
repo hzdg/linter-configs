@@ -1,3 +1,5 @@
 module.exports = {
-  rules: {},
+  rules: {
+    'media-query-parentheses-space-inside': 'never',
+  },
 };
