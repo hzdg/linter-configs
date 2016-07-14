@@ -28,6 +28,5 @@ module.exports = {
     './rules/time',
     './rules/value-list',
     './rules/value',
-    './rules/plugins/scss',
   ],
 };
