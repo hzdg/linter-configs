@@ -4,7 +4,6 @@ module.exports = {
     'no-duplicate-selectors': true,
     'no-eol-whitespace': true,
     'no-extra-semicolons': true,
-    'no-missing-eof-newline': true,
     'number-leading-zero': 'always',
     'number-no-trailing-zeros': true,
   },
