@@ -3,7 +3,7 @@ We use [ESLint] to lint our JavaScript code.
 Our JavaScript is written using new features that may not be supported in some
 (or any) browsers yet and compiled to compatible JavaScript using [Babel].
 
-Copy `.eslintrc` to the root of your JavaScript project.
+Extend `eslint-config-hzdg` in your `.eslintrc` file.
 
 
 # Installation
