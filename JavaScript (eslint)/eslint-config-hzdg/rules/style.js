@@ -11,7 +11,7 @@ module.exports = {
     'eol-last': 2,
     'func-names': 0,
     'func-style': [0, 'declaration'],
-    'id-blacklist': [0, 'data', 'err', 'e', 'cb', 'callback'], /* TODO: Review */
+    'id-blacklist': [0, 'data', 'err', 'e', 'cb', 'callback'],
     'id-length': 0,
     'id-match': 0,
     indent: [2, 2, {SwitchCase: 1}],
@@ -24,8 +24,8 @@ module.exports = {
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'new-parens': 2,
     'newline-after-var': 0,
-    'newline-before-return': 0, /* TODO: Review */
-    'newline-per-chained-call': 0, /* TODO: Review */
+    'newline-before-return': 0,
+    'newline-per-chained-call': 0,
     'no-array-constructor': 2,
     'no-continue': 0,
     'no-inline-comments': 0,
@@ -46,7 +46,7 @@ module.exports = {
     'object-curly-newline': 0,
     'object-curly-spacing': 0,
     'one-var': 0,
-    'one-var-declaration-per-line': [0, 'always'], /* TODO: Review */
+    'one-var-declaration-per-line': [0, 'always'],
     'operator-assignment': [0, 'always'],
     'operator-linebreak': 0,
     'padded-blocks': 0,
