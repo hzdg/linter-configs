@@ -28,5 +28,5 @@ module.exports = {
     './rules/time',
     './rules/value-list',
     './rules/value',
-  ],
+  ].map(require.resolve),
 };

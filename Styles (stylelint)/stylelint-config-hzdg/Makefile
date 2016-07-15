@@ -1,5 +1,5 @@
-TEST_CMD := ./node_modules/.bin/mocha --compilers js:babel-core/register
-TEST_PATTERN := test/test-**.js
+TEST_CMD := ./node_modules/.bin/ava --register ./ava-bootstrap.js --verbose
+TEST_PATTERN := test.js
 
 test:
 	${TEST_CMD} ${TEST_PATTERN}
