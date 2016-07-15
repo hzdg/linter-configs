@@ -1,10 +1,8 @@
-import assert from 'power-assert';
-
-export default function runTest(availableRules, definedRules) {
+export default function rulesTest(availableRules, definedRules) {
   return makeAssertions(compareRules(availableRules, definedRules));
 }
 
-function compareRules(availableRules, definedRules) {
+export function compareRules(availableRules, definedRules) {
 
   const missingRules = [];
   for (const rule in availableRules) {
@@ -20,15 +18,14 @@ function compareRules(availableRules, definedRules) {
 }
 
 function makeAssertions({missingRules, extraRules}) {
+  return t => {
+    t.is(missingRules.length, 0, `Missing Rule(s): ${missingRules}`);
+    t.is(extraRules.length, 0, `Extra Rule(s): ${extraRules}`);
+  };
+}
 
-  it('should not be missing rules', done => {
-    assert(missingRules.length === 0, `Missing Rule(s): ${missingRules}`);
-    done();
-  });
-
-  it('should not have extra rules', done => {
-    assert(extraRules.length === 0, `Extra Rule(s): ${extraRules}`);
-    done();
-  });
-
+export function removePluginName(pluginRules) {
+  const rules = {};
+  for (const key in pluginRules) rules[key.split('/')[1]] = pluginRules[key];
+  return rules;
 }
