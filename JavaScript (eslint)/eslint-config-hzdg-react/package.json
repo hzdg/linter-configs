@@ -30,6 +30,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
     "eslint": "^3.0.1",
+    "eslint-config-hzdg": "^0.2.0",
     "eslint-plugin-babel": "^3.3.0"
   },
   "peerDependencies": {
