@@ -25,19 +25,13 @@ installed using npm:
 npm install babel-eslint
 ```
 
-We also use three ESLint plugins:
-
-* [eslint-plugin-babel] for handling problematic Babel features
-* [eslint-plugin-react] for enforcing React-specific rules
-* [eslint-plugin-jsx-a11y] for ensuring accessibility when writing jsx
-
-They need to be installed with npm:
+We also use [eslint-plugin-babel] for handling problematic Babel features. It
+can also be installed with npm:
 
 ```sh
 npm install eslint-plugin-babel
-npm install eslint-plugin-react
-npm install eslint-plugin-jsx-a11y
 ```
+
 
 # Editor Integration
 
@@ -50,5 +44,3 @@ npm install eslint-plugin-jsx-a11y
 [atom-linter]: https://atom.io/packages/linter
 [babel-eslint]: https://github.com/babel/babel-eslint
 [eslint-plugin-babel]: https://github.com/babel/eslint-plugin-babel
-[eslint-plugin-react]: https://github.com/yannickcr/eslint-plugin-react
-[eslint-plugin-jsx-a11y]: https://github.com/evcohen/eslint-plugin-jsx-a11y
