@@ -21,6 +21,7 @@ module.exports = {
     'lines-around-comment': 0,
     'linebreak-style': [0, 'unix'],
     'max-nested-callbacks': [0, 2],
+    'multiline-ternary': 0,
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'new-parens': 2,
     'newline-after-var': 0,
