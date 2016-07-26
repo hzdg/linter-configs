@@ -3,6 +3,7 @@ module.exports = {
     'declaration-colon-newline-after': 'always-multi-line',
     'declaration-colon-space-after': 'always-single-line',
     'declaration-colon-space-before': 'never',
+    'declaration-no-important': true,
     'declaration-property-value-blacklist': {
       '/^transition/': [
         '/all/',
