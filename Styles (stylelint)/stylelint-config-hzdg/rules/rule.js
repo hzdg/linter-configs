@@ -3,10 +3,10 @@ module.exports = {
     'rule-nested-empty-line-before': [
       'always-multi-line',
       {
-        'except': [
+        except: [
           'first-nested',
         ],
-        'ignore': [
+        ignore: [
           'after-comment',
         ],
       },
@@ -14,7 +14,7 @@ module.exports = {
     'rule-non-nested-empty-line-before': [
       'always-multi-line',
       {
-        'ignore': [
+        ignore: [
           'after-comment',
         ],
       },
