@@ -14,6 +14,7 @@ module.exports = {
     './rules/function',
     './rules/general',
     './rules/keyframe-declaration',
+    './rules/length',
     './rules/media-feature',
     './rules/media-query-list',
     './rules/media-query',
