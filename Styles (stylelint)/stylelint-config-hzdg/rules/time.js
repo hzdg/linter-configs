@@ -1,3 +1,5 @@
 module.exports = {
-  rules: {},
+  rules: {
+    'time-no-imperceptible': true,
+  },
 };
