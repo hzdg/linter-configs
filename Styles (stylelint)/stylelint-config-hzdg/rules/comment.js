@@ -1,16 +1,16 @@
 module.exports = {
   rules: {
-    "comment-empty-line-before": [
-      "always",
+    'comment-empty-line-before': [
+      'always',
       {
-        "except": [
-          "first-nested"
+        except: [
+          'first-nested',
         ],
-        "ignore": [
-          "stylelint-commands"
-        ]
-      }
+        ignore: [
+          'stylelint-commands',
+        ],
+      },
     ],
-    "comment-whitespace-inside": "always",
+    'comment-whitespace-inside': 'always',
   },
 };
