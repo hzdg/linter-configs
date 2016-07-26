@@ -27,6 +27,7 @@ module.exports = {
     './rules/string',
     './rules/stylelint-disable',
     './rules/time',
+    './rules/unit',
     './rules/value-list',
     './rules/value',
   ].map(require.resolve),
