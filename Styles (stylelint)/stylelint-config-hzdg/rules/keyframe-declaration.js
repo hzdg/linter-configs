@@ -1,3 +1,5 @@
 module.exports = {
-  rules: {},
+  rules: {
+    'keyframe-declaration-no-important': true,
+  },
 };
