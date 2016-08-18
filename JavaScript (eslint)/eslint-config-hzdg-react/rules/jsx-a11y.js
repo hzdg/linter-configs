@@ -3,6 +3,7 @@ module.exports = {
     'jsx-a11y',
   ],
   rules: {
+    'jsx-a11y/anchor-has-content': 2,
     'jsx-a11y/aria-props': 2,
     'jsx-a11y/aria-proptypes': 2,
     'jsx-a11y/aria-role': 2,
