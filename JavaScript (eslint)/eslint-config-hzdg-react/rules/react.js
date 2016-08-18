@@ -32,6 +32,7 @@ module.exports = {
     'react/jsx-wrap-multilines': 2,
     'react/no-comment-textnodes': 2,
     'react/no-danger': 0,
+    'react/no-danger-with-children': 2,
     'react/no-deprecated': 2,
     'react/no-did-mount-set-state': 1,
     'react/no-did-update-set-state': 1,
