@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/hzdg/linter-configs#readme",
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "babel-eslint": "^6.1.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-es2015": "^6.9.0",
