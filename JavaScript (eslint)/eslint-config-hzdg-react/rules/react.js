@@ -17,6 +17,7 @@ module.exports = {
     'react/jsx-handler-names': 1,
     'react/jsx-max-props-per-line': 0,
     'react/jsx-no-bind': 2,
+    'react/jsx-no-comment-textnodes': 2,
     'react/jsx-no-duplicate-props': [2, {ignoreCase: true}],
     'react/jsx-no-literals': 0,
     'react/jsx-no-target-blank': 2,
