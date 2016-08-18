@@ -27,6 +27,7 @@ module.exports = {
     'no-extra-label': 2,
     'no-fallthrough': 2,
     'no-floating-decimal': 2,
+    'no-global-assign': [2, {exceptions: []}],
     'no-implicit-coercion': 2,
     'no-implicit-globals': 2,
     'no-implied-eval': 2,
