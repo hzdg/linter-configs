@@ -4,6 +4,7 @@ module.exports = {
   ],
   rules: {
     'react/display-name': [1, {ignoreTranspilerName: false}],
+    'react/forbid-component-props': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-boolean-value': [2, 'never'],
     'react/jsx-closing-bracket-location': [0, 'props-aligned'],
