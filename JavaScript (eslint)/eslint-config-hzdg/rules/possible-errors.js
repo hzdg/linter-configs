@@ -28,6 +28,7 @@ module.exports = {
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
     'no-unsafe-negation': 2,
+    'no-template-curly-in-string': 2,
     'use-isnan': 2,
     'valid-jsdoc': [2, {
       prefer: {
