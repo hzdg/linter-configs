@@ -27,6 +27,7 @@ module.exports = {
     'react/jsx-space-before-closing': [2, 'always'], /* TODO: Review */
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
+    'react/jsx-wrap-multilines': 2,
     'react/no-comment-textnodes': 2,
     'react/no-danger': 0,
     'react/no-deprecated': 2,
