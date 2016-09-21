@@ -33,6 +33,7 @@ module.exports = {
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
     'react/jsx-wrap-multilines': 2,
+    'react/no-children-prop': 2,
     'react/no-comment-textnodes': 2,
     'react/no-danger': 0,
     'react/no-danger-with-children': 2,
@@ -46,7 +47,12 @@ module.exports = {
     'react/no-multi-comp': 0,
     'react/no-set-state': 0,
     'react/no-string-refs': 2,
+    'react/no-unescaped-entities': 2,
     'react/no-unknown-property': 1,
+    'react/no-unused-prop-types': [2, {
+      customValidators: [],
+      skipShapeProps: false,
+    }],
     'react/prefer-es6-class': 0,
     'react/prefer-stateless-function': 0,
     'react/react-in-jsx-scope': 2,
@@ -57,6 +63,7 @@ module.exports = {
     'react/self-closing-comp': 2,
     'react/sort-prop-types': 0,
     'react/sort-comp': 2,
+    'react/style-prop-object': 2,
     'react/wrap-multilines': 2,
   },
 };
