@@ -20,6 +20,15 @@ module.exports = {
     'key-spacing': [2, {beforeColon: false, afterColon: true}],
     'keyword-spacing': 2,
     'lines-around-comment': 0,
+    'lines-around-directive': [2, {
+      before: 'always',
+      after: 'always',
+    }],
+    'line-comment-position': [0, {
+      position: 'above',
+      ignorePattern: '',
+      applyDefaultPatterns: true,
+    }],
     'linebreak-style': [0, 'unix'],
     'max-nested-callbacks': [0, 2],
     'multiline-ternary': 0,
