@@ -32,10 +32,10 @@
     "eslint-config-hzdg": "^0.4.0",
     "eslint-plugin-babel": "^3.3.0",
     "stylelint": "^7.3.1",
-    "stylelint-config-standard": "^12.0.0"
+    "stylelint-config-standard": "^13.0.2"
   },
   "peerDependencies": {
     "stylelint": "^7.3.1",
-    "stylelint-config-standard": "^12.0.0"
+    "stylelint-config-standard": "^13.0.2"
   }
 }
