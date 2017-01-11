@@ -3,5 +3,23 @@ module.exports = {
     './rules/jsx-a11y',
     './rules/react',
   ].map(require.resolve),
-  rules: {},
+  rules: {
+
+    'class-methods-use-this': [2, {
+      exceptMethods: [
+        'render',
+        'getInitialState',
+        'getDefaultProps',
+        'getChildContext',
+        'componentWillMount',
+        'componentDidMount',
+        'componentWillReceiveProps',
+        'shouldComponentUpdate',
+        'componentWillUpdate',
+        'componentDidUpdate',
+        'componentWillUnmount',
+      ],
+    }],
+
+  },
 };
