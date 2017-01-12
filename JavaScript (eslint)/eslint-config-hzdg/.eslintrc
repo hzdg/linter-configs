@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-hzdg",
+  "extends": "./index.js",
   "rules": {
     "no-magic-numbers": 0,
   }
