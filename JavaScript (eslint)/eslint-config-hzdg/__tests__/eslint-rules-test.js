@@ -9,8 +9,9 @@ let definedRules = {};
 fs.readdirSync(path.join(__dirname, '..', 'rules'))
   .filter(name => name !== 'plugins')
   .forEach(name => {
-    const {rules} = require(`../rules/${name}`); // eslint-disable-line global-require
-    definedRules = Object.assign(definedRules, rules);
+    // eslint-disable-next-line global-require
+    const {rules} = require(`../rules/${name}`);
+    definedRules = Object.assign({}, definedRules, rules);
   });
 
 test(rulesTest(eslintRules, definedRules));
