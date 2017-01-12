@@ -30,9 +30,15 @@ module.exports = {
     'react/jsx-pascal-case': 2,
     'react/jsx-sort-props': 0,
     'react/jsx-space-before-closing': [2, 'always'], /* TODO: Review */
+    'react/jsx-tag-spacing': [2, {
+      closingSlash: 'never',
+      beforeSelfClosing: 'always',
+      afterOpening: 'never',
+    }],
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
     'react/jsx-wrap-multilines': 2,
+    'react/no-array-index-key': 2,
     'react/no-children-prop': 2,
     'react/no-comment-textnodes': 2,
     'react/no-danger': 0,
@@ -57,6 +63,7 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/react-in-jsx-scope': 2,
     'react/require-extension': [1, {extensions: ['.js', '.jsx']}],
+    'react/require-default-props': 2,
     'react/require-optimization': 0, /* TODO: Review */
     'react/require-render-return': 2,
     'react/prop-types': 2,
