@@ -12,10 +12,10 @@ module.exports = {
   },
   rules: {
     'arrow-body-style': [2, 'as-needed'],
-    'arrow-parens': 0,
+    'arrow-parens': [2, 'as-needed'],
     'arrow-spacing': [2, {before: true, after: true}],
     'constructor-super': 0,
-    'generator-star-spacing': 0,
+    'generator-star-spacing': [2, {before: true, after: false}],
     'no-class-assign': 2,
     'no-confusing-arrow': 2,
     'no-const-assign': 2,
@@ -32,6 +32,12 @@ module.exports = {
     'object-shorthand': 2,
     'prefer-arrow-callback': 2,
     'prefer-const': 2,
+    'prefer-destructuring': [2, {
+      array: true,
+      object: true,
+    }, {
+      enforceForRenamedProperties: false,
+    }],
     'prefer-numeric-literals': 2,
     'prefer-reflect': 0,
     'prefer-rest-params': 2,
