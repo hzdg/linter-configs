@@ -35,5 +35,11 @@
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
     "eslint-plugin-babel": "^3.3.0"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
   }
 }
