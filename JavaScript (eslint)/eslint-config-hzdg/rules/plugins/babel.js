@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'babel',
-  ],
+  plugins: ['babel'],
   rules: {
     'babel/array-bracket-spacing': [0, 'never'],
     'babel/arrow-parens': [0, 'as-needed'],
@@ -13,5 +11,6 @@ module.exports = {
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': [2, 'never'],
     'babel/object-shorthand': 0,
+    'babel/semi': 2,
   },
 };

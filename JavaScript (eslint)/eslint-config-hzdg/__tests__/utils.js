@@ -3,7 +3,6 @@ export default function rulesTest(availableRules, definedRules) {
 }
 
 export function compareRules(availableRules, definedRules) {
-
   const missingRules = [];
   for (const rule in availableRules) {
     if (!{}.hasOwnProperty.call(definedRules, rule)) missingRules.push(rule);
@@ -26,6 +25,8 @@ function makeAssertions({missingRules, extraRules}) {
 
 export function removePluginName(pluginRules) {
   const rules = {};
-  for (const key in pluginRules) rules[key.split('/')[1]] = pluginRules[key];
+  for (const key in pluginRules) {
+    rules[key.split('/')[1]] = pluginRules[key];
+  }
   return rules;
 }

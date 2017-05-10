@@ -37,7 +37,8 @@ module.exports = {
     'no-labels': 2,
     'no-lone-blocks': 2,
     'no-loop-func': 2,
-    'no-magic-numbers': [2,
+    'no-magic-numbers': [
+      2,
       {
         ignore: [-1, 0, 0.5, 1, 2, 100],
         ignoreArrayIndexes: true,
@@ -46,7 +47,6 @@ module.exports = {
     ],
     'no-multi-spaces': 2,
     'no-multi-str': 2,
-    'no-native-reassign': 2,
     'no-new-func': 2,
     'no-new-wrappers': 2,
     'no-new': 2,
@@ -56,11 +56,14 @@ module.exports = {
     'no-process-env': 0,
     'no-proto': 2,
     'no-redeclare': 2,
-    'no-restricted-properties': [2, {
-      object: 'arguments',
-      property: 'callee',
-      message: 'arguments.callee is deprecated',
-    }],
+    'no-restricted-properties': [
+      2,
+      {
+        object: 'arguments',
+        property: 'callee',
+        message: 'arguments.callee is deprecated',
+      },
+    ],
     'no-return-assign': 2,
     'no-return-await': 2,
     'no-script-url': 2,
@@ -75,8 +78,12 @@ module.exports = {
     'no-useless-concat': 2,
     'no-useless-escape': 2,
     'no-void': 0,
-    'no-warning-comments': [0, {terms: ['todo', 'fixme', 'xxx'], location: 'start'}],
+    'no-warning-comments': [
+      0,
+      {terms: ['todo', 'fixme', 'xxx'], location: 'start'},
+    ],
     'no-with': 2,
+    'prefer-promise-reject-errors': [2, {allowEmptyReject: true}],
     radix: 0,
     'require-await': 0,
     'vars-on-top': 0,

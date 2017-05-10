@@ -2,6 +2,7 @@ module.exports = {
   rules: {
     'comma-dangle': [2, 'always-multiline'],
     'no-await-in-loop': 2,
+    'no-compare-neg-zero': 2,
     'no-cond-assign': 2,
     'no-console': 2,
     'no-constant-condition': 2,
@@ -20,7 +21,6 @@ module.exports = {
     'no-inner-declarations': [2, 'functions'],
     'no-invalid-regexp': 2,
     'no-irregular-whitespace': 2,
-    'no-negated-in-lhs': 2,
     'no-obj-calls': 2,
     'no-prototype-builtins': 2,
     'no-regex-spaces': 2,
@@ -32,11 +32,14 @@ module.exports = {
     'no-useless-return': 2,
     'no-template-curly-in-string': 2,
     'use-isnan': 2,
-    'valid-jsdoc': [2, {
-      prefer: {
-        return: 'returns',
+    'valid-jsdoc': [
+      2,
+      {
+        prefer: {
+          return: 'returns',
+        },
       },
-    }],
+    ],
     'valid-typeof': 2,
   },
 };
