@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hzdg-react",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "HZ's ESLint config for React",
   "main": "index.js",
   "scripts": {
