@@ -38,11 +38,12 @@ module.exports = {
     'no-lone-blocks': 2,
     'no-loop-func': 2,
     'no-magic-numbers': [
-      2,
+      'off',
       {
-        ignore: [-1, 0, 0.5, 1, 2, 100],
+        ignore: [],
         ignoreArrayIndexes: true,
-        detectObjects: true,
+        enforceConst: true,
+        detectObjects: false,
       },
     ],
     'no-multi-spaces': 2,

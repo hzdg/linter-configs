@@ -6,6 +6,7 @@ module.exports = {
     'callback-return': 2,
     'global-require': 2,
     'handle-callback-err': 0,
+    'no-buffer-constructor': 'error',
     'no-mixed-requires': 0,
     'no-new-require': 0,
     'no-path-concat': 0,

@@ -1,6 +1,12 @@
 {
   "extends": "./index.js",
   "rules": {
-    "no-magic-numbers": 0,
+    "prettier/prettier": ["error", {
+      "trailingComma": "all",
+      "singleQuote": true,
+      "bracketSpacing": false,
+      "parser": "babylon"
+      }
+    ]
   }
 }

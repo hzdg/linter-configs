@@ -9,10 +9,12 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
+    'eslint-config-prettier',
   ].map(require.resolve),
   env: {
     browser: true,
   },
   parser: 'babel-eslint',
+  plugins: ['prettier'],
   rules: {},
 };

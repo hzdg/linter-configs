@@ -1,6 +1,8 @@
 module.exports = {
   rules: {
+    'array-bracket-newline': ['error', {multiline: true, minItems: 3}],
     'array-bracket-spacing': [2, 'never'],
+    'array-element-newline': ['error', {multiline: true, minItems: 3}],
     'block-spacing': 2,
     'brace-style': [2, '1tbs', {allowSingleLine: true}],
     camelcase: 2,
@@ -22,13 +24,6 @@ module.exports = {
     'key-spacing': [2, {beforeColon: false, afterColon: true}],
     'keyword-spacing': 2,
     'lines-around-comment': 0,
-    'lines-around-directive': [
-      2,
-      {
-        before: 'always',
-        after: 'always',
-      },
-    ],
     'line-comment-position': [
       0,
       {
@@ -42,8 +37,6 @@ module.exports = {
     'multiline-ternary': 0,
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'new-parens': 2,
-    'newline-after-var': 0,
-    'newline-before-return': 0,
     'newline-per-chained-call': 0,
     'no-array-constructor': 2,
     'no-continue': 0,
@@ -71,11 +64,13 @@ module.exports = {
     'operator-assignment': [0, 'always'],
     'operator-linebreak': 0,
     'padded-blocks': 0,
+    'padding-line-between-statements': 'off',
     'quote-props': [2, 'as-needed'],
     quotes: [2, 'single', 'avoid-escape'],
     'require-jsdoc': 0,
     semi: 0,
     'semi-spacing': [2, {before: false, after: true}],
+    'semi-style': ['error', 'last'],
     'sort-keys': [0, 'asc', {caseSensitive: false, natural: true}],
     'sort-vars': 0,
     'sort-imports': 0,
@@ -85,6 +80,7 @@ module.exports = {
     'space-infix-ops': 2,
     'space-unary-ops': [2, {words: true, nonwords: false}],
     'spaced-comment': [2, 'always'],
+    'switch-colon-spacing': ['error', {after: true, before: false}],
     'template-tag-spacing': [2, 'never'],
     'unicode-bom': [0, 'never'],
     'wrap-regex': 0,

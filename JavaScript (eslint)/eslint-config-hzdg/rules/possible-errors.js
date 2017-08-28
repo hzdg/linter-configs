@@ -1,6 +1,8 @@
 module.exports = {
   rules: {
     'comma-dangle': [2, 'always-multiline'],
+    'for-direction': 'error',
+    'getter-return': ['error', {allowImplicit: true}],
     'no-await-in-loop': 2,
     'no-compare-neg-zero': 2,
     'no-cond-assign': 2,
