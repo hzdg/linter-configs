@@ -16,5 +16,15 @@ module.exports = {
   },
   parser: 'babel-eslint',
   plugins: ['prettier'],
-  rules: {},
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'all',
+        singleQuote: true,
+        bracketSpacing: false,
+        parser: 'babylon',
+      },
+    ],
+  },
 };
