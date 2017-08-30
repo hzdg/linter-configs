@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hzdg-react",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "HZ's ESLint config for React",
   "main": "index.js",
   "scripts": {
@@ -10,13 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/hzdg/linter-configs.git"
   },
-  "keywords": [
-    "eslint",
-    "config",
-    "hzdg",
-    "react",
-    "javascript"
-  ],
+  "keywords": ["eslint", "config", "hzdg", "react", "javascript"],
   "author": "John Trent (johnt@hzdg.com)",
   "license": "MIT",
   "bugs": {
@@ -44,8 +38,6 @@
   },
   "ava": {
     "babel": "inherit",
-    "require": [
-      "babel-register"
-    ]
+    "require": ["babel-register"]
   }
 }
