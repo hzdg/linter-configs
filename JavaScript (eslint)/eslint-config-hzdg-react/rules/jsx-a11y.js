@@ -13,6 +13,14 @@ module.exports = {
       },
     ],
     'jsx-a11y/anchor-has-content': ['error', {components: ['']}],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: [],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
     'jsx-a11y/aria-props': 'error',
     'jsx-a11y/aria-proptypes': 'error',
@@ -20,7 +28,6 @@ module.exports = {
     'jsx-a11y/aria-unsupported-elements': 'error',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/heading-has-content': ['error', {components: ['']}],
-    'jsx-a11y/href-no-hash': ['error', {components: ['a']}],
     'jsx-a11y/html-has-lang': 'error',
     'jsx-a11y/iframe-has-title': 'error',
     'jsx-a11y/img-redundant-alt': 'error',

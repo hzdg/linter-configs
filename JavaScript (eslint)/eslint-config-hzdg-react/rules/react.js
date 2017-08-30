@@ -1,6 +1,17 @@
 module.exports = {
   plugins: ['react'],
   rules: {
+    'react/boolean-prop-naming': [
+      'off',
+      {
+        propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
+        rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
+      },
+    ],
+    'react/default-props-match-prop-types': [
+      'error',
+      {allowRequiredDefaults: false},
+    ],
     'react/display-name': ['off', {ignoreTranspilerName: false}],
     'react/forbid-component-props': ['off', {forbid: []}],
     'react/forbid-elements': ['off', {forbid: []}],
@@ -8,6 +19,7 @@ module.exports = {
     'react/forbid-prop-types': ['off', {forbid: ['any', 'array', 'object']}], // TODO: Review me
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-closing-bracket-location': ['off', 'props-aligned'],
+    'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-spacing': ['error', 'never', {allowMultiline: true}],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-filename-extension': 'off',
@@ -54,7 +66,7 @@ module.exports = {
         reservedFirst: true,
       },
     ],
-    'react/jsx-space-before-closing': ['error', 'always'],
+    'react/jsx-space-before-closing': ['off', 'always'],
     'react/jsx-tag-spacing': [
       'error',
       {
@@ -83,11 +95,13 @@ module.exports = {
     'react/no-did-update-set-state': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-find-dom-node': 'error',
+    'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-is-mounted': 'error',
     'react/no-multi-comp': ['error', {ignoreStateless: true}],
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',
+    'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': [
@@ -97,6 +111,7 @@ module.exports = {
         skipShapeProps: true,
       },
     ],
+    'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': ['error', 'always'],
     'react/prefer-stateless-function': ['error', {ignorePureComponents: true}],
