@@ -48,9 +48,9 @@
       "@babel/register"
     ],
     "@babel": {
-			"testOptions": {
-				"presets": ["@babel/preset-env"]
-			}
-		}
+      "testOptions": {
+        "presets": ["@babel/preset-env"]
+      }
+    }
   }
 }
