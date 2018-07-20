@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hzdg",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "HZ's ESLint config",
   "main": "index.js",
   "scripts": {
@@ -48,9 +48,11 @@
       "@babel/register"
     ],
     "@babel": {
-			"testOptions": {
-				"presets": ["@babel/preset-env"]
-			}
-		}
+      "testOptions": {
+        "presets": [
+          "@babel/preset-env"
+        ]
+      }
+    }
   }
 }
