@@ -5,8 +5,7 @@ import {rules as eslintRules} from 'eslint/conf/eslint-all';
 import rulesTest from './utils';
 
 let definedRules = {};
-fs
-  .readdirSync(path.join(__dirname, '..', 'rules'))
+fs.readdirSync(path.join(__dirname, '..', 'rules'))
   .filter(name => name !== 'plugins')
   .forEach(name => {
     // eslint-disable-next-line global-require
