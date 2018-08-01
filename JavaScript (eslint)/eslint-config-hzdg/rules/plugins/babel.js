@@ -12,5 +12,7 @@ module.exports = {
     'babel/object-curly-spacing': ['error', 'never'],
     'babel/object-shorthand': 'off',
     'babel/semi': 'error',
+    'babel/quotes': ['off', 'as-needed'],
+    'babel/no-unused-expressions': 'error',
   },
 };

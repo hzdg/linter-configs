@@ -8,18 +8,23 @@ module.exports = {
         rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
       },
     ],
+    'react/button-has-type': 'off',
     'react/default-props-match-prop-types': [
       'error',
       {allowRequiredDefaults: false},
     ],
+    'react/destructuring-assignment': ['error', 'never'],
     'react/display-name': ['off', {ignoreTranspilerName: false}],
     'react/forbid-component-props': ['off', {forbid: []}],
+    'react/forbid-dom-props': ['off', {forbid: []}],
     'react/forbid-elements': ['off', {forbid: []}],
     'react/forbid-foreign-prop-types': 'off',
     'react/forbid-prop-types': ['off', {forbid: ['any', 'array', 'object']}], // TODO: Review me
     'react/jsx-boolean-value': ['error', 'never'],
+    'react/jsx-child-element-spacing': 'off',
     'react/jsx-closing-bracket-location': ['off', 'props-aligned'],
     'react/jsx-closing-tag-location': 'error',
+    'react/jsx-curly-brace-presence': 'off',
     'react/jsx-curly-spacing': ['error', 'never', {allowMultiline: true}],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-filename-extension': 'off',
@@ -34,6 +39,7 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
+    'react/jsx-max-depth': 'off',
     'react/jsx-max-props-per-line': ['error', {maximum: 1, when: 'multiline'}],
     'react/jsx-no-bind': [
       'error',
@@ -48,6 +54,7 @@ module.exports = {
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': [
       'error',
       {
@@ -55,6 +62,7 @@ module.exports = {
         ignore: [],
       },
     ],
+    'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-sort-props': [
       'off',
       {
@@ -66,6 +74,7 @@ module.exports = {
         reservedFirst: true,
       },
     ],
+    'react/jsx-sort-default-props': 'off',
     'react/jsx-space-before-closing': ['off', 'always'],
     'react/jsx-tag-spacing': [
       'error',
@@ -86,6 +95,7 @@ module.exports = {
         arrow: true,
       },
     ],
+    'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'error',
     'react/no-children-prop': 'error',
     'react/no-danger': 'warn',
@@ -102,6 +112,7 @@ module.exports = {
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',
     'react/no-typos': 'error',
+    'react/no-this-in-sfc': 'error',
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': [
@@ -112,6 +123,7 @@ module.exports = {
       },
     ],
     'react/no-unused-state': 'error',
+    'react/no-unsafe': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': ['error', 'always'],
     'react/prefer-stateless-function': ['error', {ignorePureComponents: true}],
