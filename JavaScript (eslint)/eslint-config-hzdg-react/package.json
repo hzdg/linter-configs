@@ -24,19 +24,19 @@
   },
   "homepage": "https://github.com/hzdg/linter-configs#readme",
   "devDependencies": {
-    "ava": "^0.22.0",
     "@babel/core": "7.0.0-beta.54",
     "@babel/preset-env": "7.0.0-beta.54",
     "@babel/register": "7.0.0-beta.54",
+    "ava": "^0.22.0",
     "babel-eslint": "9.0.0-beta.3",
-    "eslint": "5.1.0",
-    "eslint-config-hzdg": "^0.7.1",
+    "eslint": "5.2.0",
+    "eslint-config-hzdg": "0.8.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-react": "7.10.0",
-    "prettier": "1.13.7"
+    "prettier": "1.14.0"
   },
   "peerDependencies": {
     "eslint": "5.1.0",
