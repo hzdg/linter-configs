@@ -1670,9 +1670,9 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-config-hzdg@0.8.0:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-hzdg/-/eslint-config-hzdg-0.7.1.tgz#1aeae5a83a1de65eddeb1ce568c3d21a15e728d1"
+eslint-config-hzdg@0.9.0:
+  version "0.8.0"
+  resolved "http://npmregistry.hzdg.com/eslint-config-hzdg/-/eslint-config-hzdg-0.8.0.tgz#c832233bcd6a9fa0484d5949ff3d8723b56c1c05"
 
 eslint-config-prettier@2.9.0:
   version "2.9.0"
