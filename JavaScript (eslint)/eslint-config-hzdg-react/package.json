@@ -30,7 +30,7 @@
     "ava": "^0.22.0",
     "babel-eslint": "9.0.0-beta.3",
     "eslint": "5.2.0",
-    "eslint-config-hzdg": "0.8.0",
+    "eslint-config-hzdg": "0.9.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
