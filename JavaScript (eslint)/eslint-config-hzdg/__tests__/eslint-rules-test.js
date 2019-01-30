@@ -1,16 +1,22 @@
-import test from 'ava';
+/* eslint-env jest */
 import fs from 'fs';
 import path from 'path';
-import {rules as eslintRules} from 'eslint/conf/eslint-all';
-import rulesTest from './utils';
+import {rules as availableRules} from 'eslint/conf/eslint-all';
+import './utils';
 
-let definedRules = {};
-fs.readdirSync(path.join(__dirname, '..', 'rules'))
+const definedRules = fs
+  .readdirSync(path.join(__dirname, '..', 'rules'))
   .filter(name => name !== 'plugins')
-  .forEach(name => {
+  .reduce(
     // eslint-disable-next-line global-require
-    const {rules} = require(`../rules/${name}`);
-    definedRules = Object.assign({}, definedRules, rules);
-  });
+    (rules, name) => ({...rules, ...require(`../rules/${name}`).rules}),
+    {},
+  );
 
-test(rulesTest(eslintRules, definedRules));
+test.each(Object.keys(definedRules))('defined rule: %s', rule => {
+  expect(availableRules).toHaveDefinableRule(rule);
+});
+
+test.each(Object.keys(availableRules))('available rule: %s', rule => {
+  expect(definedRules).toHaveDefinedRule(rule);
+});

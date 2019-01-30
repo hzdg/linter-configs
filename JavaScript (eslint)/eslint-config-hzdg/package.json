@@ -4,7 +4,7 @@
   "description": "HZ's ESLint config",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/jest __tests__/.+-test.js"
   },
   "repository": {
     "type": "git",
@@ -27,12 +27,12 @@
     "@babel/core": "7.0.0-beta.54",
     "@babel/preset-env": "7.0.0-beta.54",
     "@babel/register": "7.0.0-beta.54",
-    "ava": "0.25.0",
     "babel-eslint": "9.0.0-beta.3",
     "eslint": "5.2.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-prettier": "2.6.2",
+    "jest": "24.0.0",
     "prettier": "1.14.0"
   },
   "peerDependencies": {
@@ -42,17 +42,5 @@
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-prettier": "2.6.2",
     "prettier": "1.14.0"
-  },
-  "ava": {
-    "require": [
-      "@babel/register"
-    ],
-    "@babel": {
-      "testOptions": {
-        "presets": [
-          "@babel/preset-env"
-        ]
-      }
-    }
   }
 }
