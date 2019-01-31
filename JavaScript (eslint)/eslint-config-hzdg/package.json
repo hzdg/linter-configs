@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "node_modules/.bin/jest __tests__/.+-test.js",
-    "test:debug": "node --inspect node_modules/.bin/jest __tests__/.+-test.js --runInBand"
+    "test:debug": "node --inspect node_modules/.bin/jest __tests__/.+-test.js --runInBand",
+    "lint": "eslint . --ext js --ext jsx --ext ts --ext tsx"
   },
   "repository": {
     "type": "git",
