@@ -7,12 +7,10 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jest/style',
   ],
-  parser: 'babel-eslint',
-  // env: {
-  //   node: true,
-  //   browser: true,
-  //   jest: true,
-  // },
+  parserOptions: {
+    ecmaVersion: new Date().getFullYear(),
+    sourceType: 'module',
+  },
   rules: {
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/disable-enable-pair': 'off',
