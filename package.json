@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "yarn workspaces run test",
+    "test:debug": "yarn workspaces run test:debug"
+  },
+  "workspaces": [
+    "./JavaScript (eslint)/eslint-config-hzdg"
+  ]
+}
