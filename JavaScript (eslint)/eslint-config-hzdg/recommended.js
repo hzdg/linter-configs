@@ -7,6 +7,12 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jest/style',
   ],
+  parser: 'babel-eslint',
+  // env: {
+  //   node: true,
+  //   browser: true,
+  //   jest: true,
+  // },
   rules: {
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/disable-enable-pair': 'off',

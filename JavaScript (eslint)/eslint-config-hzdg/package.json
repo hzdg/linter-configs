@@ -3,6 +3,10 @@
   "version": "0.9.0",
   "description": "HZ's ESLint config",
   "main": "index.js",
+  "files": [
+    "*.js",
+    "*config*"
+  ],
   "scripts": {
     "test": "node_modules/.bin/jest __tests__/.+-test.js",
     "test:debug": "node --inspect node_modules/.bin/jest __tests__/.+-test.js --runInBand"
