@@ -1,5 +1,16 @@
+const fs = require('fs');
 const path = require('path');
 const {CLIEngine} = require('eslint');
+
+const srcDir = fs.readdirSync(path.join(__dirname, '..'));
+const configFilePattern = /config\.js(?:on)?$/;
+const jsFilePattern = /\.js$/;
+
+exports.otherConfigs = srcDir.filter(name => configFilePattern.test(name));
+
+exports.linterConfigs = srcDir.filter(
+  name => jsFilePattern.test(name) && !configFilePattern.test(name),
+);
 
 exports.isWarning = function isWarning(ruleSetting) {
   let pass = false;
