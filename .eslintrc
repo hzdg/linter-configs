@@ -1,0 +1,6 @@
+{
+  "extends": ["hzdg"],
+  "env": {
+    "node": true
+  }
+}
