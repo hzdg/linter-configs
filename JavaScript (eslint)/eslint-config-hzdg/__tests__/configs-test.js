@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const {promisify} = require('util');
+const {isWarning, loadConfig} = require('./utils');
 
 const exec = promisify(require('child_process').exec);
 
@@ -33,4 +34,26 @@ describe('package contains config files', () => {
   test.each(otherConfigs.concat(linterConfigs))(`%s`, configFile => {
     expect(packagedFiles).toContain(configFile);
   });
+});
+
+describe('configs avoid warnings', () => {
+  expect.extend({
+    toBeWarning([ruleName, ruleSetting]) {
+      const pass = isWarning(ruleSetting);
+      const message = () =>
+        `"${ruleName}": ${this.utils.printReceived(ruleSetting)}`;
+      return {message, pass};
+    },
+  });
+
+  for (const configFile of linterConfigs) {
+    const config = loadConfig(configFile);
+    const {rules} = config.getConfigForFile('some.js');
+
+    describe(`${configFile}`, () => {
+      Object.entries(rules).forEach(rule => {
+        test(`${rule[0]}: ${rule[1]}`, () => expect(rule).not.toBeWarning());
+      });
+    });
+  }
 });
