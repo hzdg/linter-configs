@@ -1,5 +1,5 @@
 {
-  "extends": ["hzdg"],
+  "extends": ["hzdg", "hzdg/jest"],
   "env": {
     "node": true
   }
