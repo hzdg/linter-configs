@@ -4,15 +4,25 @@ const tsExts = ['.ts', '.tsx'];
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
+    // FIXME: The next version of import plugin will have
+    // a typescript config we can use.
+    // 'plugin:import/typescript',
     'prettier/@typescript-eslint',
   ],
   parserOptions: {
     project: './tsconfig.json',
   },
+  // FIXME: The next version of import plugin will have a typescript config
+  // that provides these settings, so we can remove them then.
   settings: {
     'import/extensions': jsExts.concat(tsExts),
     'import/parsers': {
       '@typescript-eslint/parser': tsExts,
+    },
+    'import/resolver': {
+      node: {
+        extensions: jsExts.concat(tsExts),
+      },
     },
   },
   rules: {
