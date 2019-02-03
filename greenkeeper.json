@@ -1,0 +1,7 @@
+{
+  "groups": {
+    "JavaScript (eslint)": {
+      "packages": ["JavaScript (eslint)/eslint-config-hzdg/package.json"]
+    }
+  }
+}
