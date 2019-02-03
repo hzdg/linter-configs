@@ -1,6 +1,8 @@
 Linter Configs!
 ===============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hzdg/linter-configs.svg)](https://greenkeeper.io/)
+
 Linting your code is important—especially when you work on a team! This
 repository contains configuration files for the linters we use.
 
