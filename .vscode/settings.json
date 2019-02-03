@@ -1,0 +1,4 @@
+{
+  "jest.restartJestOnSnapshotUpdate": true,
+  "jest.pathToJest": "yarn test --"
+}

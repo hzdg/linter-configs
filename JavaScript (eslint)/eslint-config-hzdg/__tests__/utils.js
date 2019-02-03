@@ -1,32 +1,31 @@
-export default function rulesTest(availableRules, definedRules) {
-  return makeAssertions(compareRules(availableRules, definedRules));
-}
+const fs = require('fs');
+const path = require('path');
+const {CLIEngine} = require('eslint');
 
-export function compareRules(availableRules, definedRules) {
-  const missingRules = [];
-  for (const rule in availableRules) {
-    if (!{}.hasOwnProperty.call(definedRules, rule)) missingRules.push(rule);
+const srcDir = fs.readdirSync(path.join(__dirname, '..'));
+const configFilePattern = /config\.js(?:on)?$/;
+const jsFilePattern = /\.js$/;
+
+exports.otherConfigs = srcDir.filter(name => configFilePattern.test(name));
+
+exports.linterConfigs = srcDir.filter(
+  name => jsFilePattern.test(name) && !configFilePattern.test(name),
+);
+
+exports.isWarning = function isWarning(ruleSetting) {
+  let pass = false;
+  if (typeof ruleSetting === 'number') {
+    pass = ruleSetting === 1;
+  } else if (typeof ruleSetting === 'string') {
+    pass = ruleSetting === 'warn';
+  } else {
+    pass = Array.isArray(ruleSetting) && isWarning(ruleSetting[0]);
   }
+  return pass;
+};
 
-  const extraRules = [];
-  for (const rule in definedRules) {
-    if (!{}.hasOwnProperty.call(availableRules, rule)) extraRules.push(rule);
-  }
-
-  return {missingRules, extraRules};
-}
-
-function makeAssertions({missingRules, extraRules}) {
-  return t => {
-    t.is(missingRules.length, 0, `Missing Rule(s): ${missingRules}`);
-    t.is(extraRules.length, 0, `Extra Rule(s): ${extraRules}`);
-  };
-}
-
-export function removePluginName(pluginRules) {
-  const rules = {};
-  for (const key in pluginRules) {
-    rules[key.split('/')[1]] = pluginRules[key];
-  }
-  return rules;
-}
+exports.loadConfig = configFile =>
+  new CLIEngine({
+    useEslintrc: false,
+    configFile: path.resolve(__dirname, '..', configFile),
+  });
