@@ -5,6 +5,6 @@
     "test:debug": "yarn workspaces run test:debug"
   },
   "workspaces": [
-    "./JavaScript (eslint)/eslint-config-hzdg"
+    "./JavaScript/eslint-config-hzdg"
   ]
 }

@@ -9,8 +9,8 @@ jobs:
       - restore_cache:
           name: Restore Dependencies
           keys:
-            - v1-dependencies-{{ checksum "yarn.lock" }}
-            - v1-dependencies-
+            - v2-dependencies-{{ checksum "yarn.lock" }}
+            - v2-dependencies-
       - run:
           name: Install Dependencies
           command: yarn --frozen-lockfile
@@ -19,8 +19,8 @@ jobs:
           paths:
             - ~/.cache/yarn
             - node_modules
-            - ./JavaScript (eslint)/eslint-config-hzdg/node_modules
-          key: v1-dependencies-{{ checksum "yarn.lock" }}
+            - ./JavaScript/eslint-config-hzdg/node_modules
+          key: v2-dependencies-{{ checksum "yarn.lock" }}
 
   test:
     docker:
@@ -31,7 +31,7 @@ jobs:
       - restore_cache:
           name: Restore Dependencies
           keys:
-            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v2-dependencies-{{ checksum "yarn.lock" }}
       - run:
           name: Run Tests
           command: yarn workspace eslint-config-hzdg test
