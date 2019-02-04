@@ -1,14 +1,26 @@
 {
+  "name": "linter-configs",
   "private": true,
   "scripts": {
     "test": "lerna run test --stream --",
-    "test:debug": "lerna run test:debug --stream --"
+    "test:debug": "lerna run test:debug --stream --",
+    "commit": "commit",
+    "release": "cross-env HUSKY_BYPASS=true lerna publish"
   },
   "workspaces": [
     "./JavaScript/eslint-config-hzdg"
   ],
-  "devDependencies": {
-    "lerna": "^3.10.7"
+  "husky": {
+    "hooks": {
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
-  "name": "linter-configs"
+  "devDependencies": {
+    "@commitlint/cli": "7.5.0",
+    "@commitlint/config-conventional": "7.5.0",
+    "@commitlint/prompt-cli": "7.5.0",
+    "cross-env": "5.2.0",
+    "husky": "1.3.1",
+    "lerna": "^3.10.7"
+  }
 }
