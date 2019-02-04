@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "test": "yarn workspaces run test",
-    "test:debug": "yarn workspaces run test:debug"
+    "test": "lerna run test --stream --",
+    "test:debug": "lerna run test:debug --stream --"
   },
   "workspaces": [
     "./JavaScript/eslint-config-hzdg"

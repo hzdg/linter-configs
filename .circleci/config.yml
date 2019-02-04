@@ -34,7 +34,7 @@ jobs:
             - v2-dependencies-{{ checksum "yarn.lock" }}
       - run:
           name: Run Tests
-          command: yarn workspace eslint-config-hzdg test
+          command: yarn test
 
 workflows:
   version: 2

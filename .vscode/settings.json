@@ -1,4 +1,3 @@
 {
-  "jest.restartJestOnSnapshotUpdate": true,
-  "jest.pathToJest": "yarn test --"
+  "jest.pathToJest": "yarn test"
 }
