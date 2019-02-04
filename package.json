@@ -5,7 +5,7 @@
     "test": "lerna run test --stream --",
     "test:debug": "lerna run test:debug --stream --",
     "commit": "commit",
-    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+    "release": "cross-env HUSKY_BYPASS=true lerna publish --registry https://registry.npmjs.com"
   },
   "workspaces": [
     "./JavaScript/eslint-config-hzdg"
