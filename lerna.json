@@ -1,11 +1,15 @@
 {
-  "packages": ["./JavaScript/eslint-config-hzdg"],
+  "packages": [
+    "./JavaScript/eslint-config-hzdg"
+  ],
   "useWorkspaces": true,
   "version": "independent",
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": [
+        "*.md"
+      ],
       "conventionalCommits": true,
       "yes": true,
       "message": "chore(release): publish"
