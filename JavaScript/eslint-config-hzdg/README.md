@@ -204,3 +204,17 @@ yarn add --dev eslint-plugin-jest
 [atom-linter]: https://atom.io/packages/linter
 [vscode-eslint]: https://github.com/Microsoft/vscode-eslint
 [prettier-vscode]: https://github.com/prettier/prettier-vscode
+
+## Contributing
+
+#### Prerequisites
+
+Install lerna globally with `yarn global add lerna` or `npm install -g lerna`
+
+#### Updating the project
+
+1. Pull down the project.
+2. Run `lerna init` in the top level directory.
+3. If adding a new package, run `lerna add <package>[@version] [--dev]`.
+4. Run tests with `yarn test`.
+5. Commit&Push.
