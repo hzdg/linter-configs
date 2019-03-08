@@ -168,7 +168,7 @@ Configure eslint to extend the HZDG React config:
 Add the necessary React peer dependencies:
 
 ```sh
-yarn add --dev eslint-plugin-jsx-a11y eslint-plugin-react
+yarn add --dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### [Jest]:
