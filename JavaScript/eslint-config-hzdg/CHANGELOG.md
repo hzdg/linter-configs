@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.1.0...eslint-config-hzdg@1.2.0) (2019-04-10)
+
+
+### Features
+
+* **react:** enable react-hooks/exhaustive-deps rule ([21f4289](https://github.com/hzdg/linter-configs/commit/21f4289))
+
+
+
+
+
 # [1.1.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.0.1...eslint-config-hzdg@1.1.0) (2019-02-06)
 
 **Note:** Version bump only for package eslint-config-hzdg
