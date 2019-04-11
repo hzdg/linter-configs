@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.2.0...eslint-config-hzdg@1.2.1) (2019-04-11)
+
+
+### Bug Fixes
+
+* **typescript:** relax explicit function return type rule ([463f3ff](https://github.com/hzdg/linter-configs/commit/463f3ff))
+* **typescript:** target es module interop by default ([9b77b2f](https://github.com/hzdg/linter-configs/commit/9b77b2f))
+
+
+
+
+
 # [1.2.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.1.0...eslint-config-hzdg@1.2.0) (2019-04-10)
 
 
