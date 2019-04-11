@@ -30,7 +30,10 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {allowExpressions: true, allowTypedFunctionExpressions: true},
+    ],
   },
   overrides: [
     {
