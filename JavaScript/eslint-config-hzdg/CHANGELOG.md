@@ -5,7 +5,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.0.0-alpha.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.2.1...eslint-config-hzdg@2.0.0-alpha.0) (2019-06-28)
 
-**Note:** Version bump only for package eslint-config-hzdg
+* **eslint:** upgrade to version 6.0.1
+* **prettier:** upgrade to version 1.18.2
+* **typescript:** upgrade to version 3.5.2
+* upgrade misc eslint plugins
 
 
 
