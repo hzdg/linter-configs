@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hzdg",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0",
   "description": "HZ's ESLint config",
   "main": "index.js",
   "files": [

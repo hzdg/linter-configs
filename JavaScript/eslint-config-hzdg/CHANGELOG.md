@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0-alpha.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@1.2.1...eslint-config-hzdg@2.0.0-alpha.0) (2019-06-28)
+# [2.0.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.0.0-alpha.0...eslint-config-hzdg@2.0.0) (2019-07-01)
 
 * **eslint:** upgrade to version 6.0.1
 * **prettier:** upgrade to version 1.18.2
