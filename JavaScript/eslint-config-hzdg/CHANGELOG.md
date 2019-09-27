@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.0.0...eslint-config-hzdg@2.1.0) (2019-09-27)
+
+
+### Bug Fixes
+
+* **typescript:** set @typescript-eslint/no-non-null-assertion: error ([a50407c](https://github.com/hzdg/linter-configs/commit/a50407c)), closes [#75](https://github.com/hzdg/linter-configs/issues/75) [#74](https://github.com/hzdg/linter-configs/issues/74) [#73](https://github.com/hzdg/linter-configs/issues/73) [#72](https://github.com/hzdg/linter-configs/issues/72) [#68](https://github.com/hzdg/linter-configs/issues/68)
+
+
+
+
+
 # [2.0.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.0.0-alpha.0...eslint-config-hzdg@2.0.0) (2019-07-01)
 
 * **eslint:** upgrade to version 6.0.1
