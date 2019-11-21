@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.1.0...eslint-config-hzdg@2.1.1) (2019-11-21)
+
+
+### Bug Fixes
+
+* **jest:** set jest warnings to errors ([410a4ce](https://github.com/hzdg/linter-configs/commit/410a4ce)), closes [#77](https://github.com/hzdg/linter-configs/issues/77) [#78](https://github.com/hzdg/linter-configs/issues/78) [#79](https://github.com/hzdg/linter-configs/issues/79) [#80](https://github.com/hzdg/linter-configs/issues/80) [#81](https://github.com/hzdg/linter-configs/issues/81) [#82](https://github.com/hzdg/linter-configs/issues/82)
+
+
+
+
+
 # [2.1.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.0.0...eslint-config-hzdg@2.1.0) (2019-09-27)
 
 
