@@ -134,25 +134,6 @@ a `tsconfig.json` that you can extend in your project:
 > }
 > ```
 
-> **NOTE for VSCode users:**
->
-> The [vscode-eslint] extension does not currently lint `.ts` or `.tsx` files
-> by default. To get eslint to run on your TypeScript files,
-> configure the extension in VSCode project (or global) settings:
->
-> **`.vscode/settings.json`**
->
-> ```json
-> {
->   "eslint.validate": [
->     "javascript",
->     "javascriptreact",
->     "typescript",
->     "typescriptreact"
->   ]
-> }
-> ```
-
 ### [React]:
 
 Configure eslint to extend the HZDG React config:
