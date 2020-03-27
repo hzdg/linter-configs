@@ -2,12 +2,11 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:import/react',
     'prettier/react',
   ],
-  plugins: ['react-hooks'],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
   },
   settings: {
