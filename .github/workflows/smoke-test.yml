@@ -1,0 +1,22 @@
+name: Linter Config Smoke Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.13'
+      - run: yarn --frozen-lockfile
+        name: 'Install Dependencies'
+      - run: yarn test
+        name: 'Run Tests'
+        env:
+          CI: true
