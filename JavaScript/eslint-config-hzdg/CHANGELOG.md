@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@3.0.0...eslint-config-hzdg@3.1.0) (2020-03-27)
+
+
+### Features
+
+* **react:** use react-hooks/recommended rules ([db6a206](https://github.com/hzdg/linter-configs/commit/db6a206))
+
+
+
+
+
 # [3.0.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@2.1.1...eslint-config-hzdg@3.0.0) (2020-03-25)
 
 **Note:** Version bump only for package eslint-config-hzdg
