@@ -2,12 +2,14 @@
   "compilerOptions": {
     "allowJs": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "noEmit": true,
     "jsx": "preserve",
     "strict": true,
-    "target": "es6"
+    "module": "ESNext",
+    "target": "ESNext"
   },
   "exclude": ["node_modules", "public", ".cache"]
 }
