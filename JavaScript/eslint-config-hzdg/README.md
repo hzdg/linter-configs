@@ -116,10 +116,14 @@ Configure eslint to extend the HZDG TypeScript config:
 > }
 > ```
 
-Add the necessary TypesScript peer dependencies:
+Add the necessary TypeScript peer dependencies:
 
 ```sh
-yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+yarn add --dev \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint-import-resolver-typescript \
+  typescript
 ```
 
 TypeScript has its own configuration file that is used by the compiler

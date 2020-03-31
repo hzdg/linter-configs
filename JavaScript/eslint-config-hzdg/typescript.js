@@ -10,6 +10,11 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/member-delimiter-style': 'off',
@@ -22,7 +27,17 @@ module.exports = {
   },
   overrides: [
     {
-      files: jsExts.map(ext => `**/*${ext}`),
+      // Disable import/default and import/named for .tsx? files
+      // because typescript-eslint already lints for them.
+      files: tsExts.map((ext) => `**/*${ext}`),
+      rules: {
+        'import/default': 'off',
+        'import/named': 'off',
+      },
+    },
+    {
+      // Disable typescript-eslint versions of eslint rules in .jsx? files.
+      files: jsExts.map((ext) => `**/*${ext}`),
       rules: {
         camelcase: 'error',
         '@typescript-eslint/camelcase': 'off',
