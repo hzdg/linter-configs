@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@3.1.0...eslint-config-hzdg@4.0.0) (2020-03-31)
+
+
+### Bug Fixes
+
+* **typescript:** use ts resolver instead of node resolver ([71df13d](https://github.com/hzdg/linter-configs/commit/71df13d))
+
+
+### Features
+
+* **typescript:** force consistent casing in file names ([95de65f](https://github.com/hzdg/linter-configs/commit/95de65f))
+* **typescript:** isolate modules, ues ESNext as default target ([d8f9073](https://github.com/hzdg/linter-configs/commit/d8f9073))
+
+
+### Performance Improvements
+
+* **typescript:** skip lib checks and ignore dotfiles and dirs ([ca27093](https://github.com/hzdg/linter-configs/commit/ca27093))
+
+
+### BREAKING CHANGES
+
+* **typescript:** we were already assuming typescript is being used
+at author time only (hence the default to `noEmit: true`). This
+changes takes that assumption to its logical conclusion, which is
+that we want to use the latest language features while writing code.
+
+Additionally, we assume that babel will be responsible for compiling
+our fancy bleeding edge code into environment-specific code, so
+we turn on `isolateModules` by default. This is because Babel
+doesn't do any static analysis across modules when compiling,
+so any typescript features that cross module boundaries
+(like reexporting types from another module) will cause problems
+for Babel.
+* **typescript:** The ts resolver uses the tsconfig to inform its
+resolving behavior, which allows things like using paths defined
+in tsconfig, or resolving @types/* definitions.
+
+
+
+
+
 # [3.1.0](https://github.com/hzdg/linter-configs/compare/eslint-config-hzdg@3.0.0...eslint-config-hzdg@3.1.0) (2020-03-27)
 
 
