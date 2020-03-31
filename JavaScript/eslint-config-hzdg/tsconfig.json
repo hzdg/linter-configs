@@ -9,7 +9,8 @@
     "jsx": "preserve",
     "strict": true,
     "module": "ESNext",
-    "target": "ESNext"
+    "target": "ESNext",
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".*"]
 }
