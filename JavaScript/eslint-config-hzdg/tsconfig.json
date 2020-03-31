@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "noEmit": true,
     "jsx": "preserve",
